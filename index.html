@@ -1,1015 +1,753 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrei Buhosu - Personal Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Andrei Buhosu — Software Engineer &amp; Salesforce Developer</title>
+  <meta name="description"
+    content="Andrei Buhosu is a UK-based Software Engineer and certified Salesforce Developer specialising in Apex, Lightning Web Components and full-stack development with Java, Spring Boot &amp; Angular. Currently pursuing an MSc in Computer Science with AI at the University of York." />
+  <meta name="author" content="Andrei Buhosu" />
+  <meta name="keywords"
+    content="Andrei Buhosu, Software Engineer, Salesforce Developer, Apex, Lightning Web Components, Full-Stack Developer, Java, Spring Boot, Angular, University of York, Computer Science, AI" />
+  <meta name="theme-color" content="#08080c" />
+  <link rel="canonical" href="https://www.andrei-buhosu.co.uk/" />
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.andrei-buhosu.co.uk/" />
+  <meta property="og:title" content="Andrei Buhosu — Software Engineer &amp; Salesforce Developer" />
+  <meta property="og:description"
+    content="Certified Salesforce Developer & full-stack engineer building scalable, automated business solutions. MSc Computer Science with AI." />
+  <meta property="og:image" content="https://www.andrei-buhosu.co.uk/assets/images/my-avatar.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Andrei Buhosu — Software Engineer &amp; Salesforce Developer" />
+  <meta name="twitter:description"
+    content="Certified Salesforce Developer & full-stack engineer. MSc Computer Science with AI." />
+  <meta name="twitter:image" content="https://www.andrei-buhosu.co.uk/assets/images/my-avatar.png" />
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrei Buhosu",
+    "jobTitle": "Software Engineer & Salesforce Developer",
+    "url": "https://www.andrei-buhosu.co.uk/",
+    "image": "https://www.andrei-buhosu.co.uk/assets/images/my-avatar.png",
+    "email": "mailto:andrei.buhosu@outlook.com",
+    "address": { "@type": "PostalAddress", "addressCountry": "United Kingdom" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of York" },
+      { "@type": "CollegeOrUniversity", "name": "University of Leicester" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/abuhosu",
+      "https://github.com/andreibuhosu",
+      "https://trailblazer.me/id/andreibuhosu"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- decorative background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <main>
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" data-header>
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Andrei Buhosu — home">
+        <span class="brand-mark">AB</span>
+        <span class="brand-text">Andrei Buhosu</span>
+      </a>
 
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Andrei Buhosu" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Andrei Buhosu">Andrei Buhosu</h1>
-
-          <p class="title">Software Engineer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/abuhosu" class="contact-link">linkedin.com/in/abuhosu</a>
-              </div>
-            </li>
-          
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="logo-github"></ion-icon>
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">GitHub</p>
-                <a href="https://github.com/andreibuhosu" class="contact-link">github.com/andreibuhosu</a>
-              </div>
-            </li>
-          
-            <li class="contact-item">
-              <div class="icon-box">
-                <img src="assets/images/Salesforce-logo.png" alt="Salesforce" width="24" height="24">
-              </div>
-              <div class="contact-info">
-                <p class="contact-title">Trailblazer</p>
-                <a href="https://trailblazer.me/id/andreibuhosu" class="contact-link">trailblazer.me/id/andreibuhosu</a>
-              </div>
-            </li>
-          </ul>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:andrei.buhosu@outlook.com" class="contact-link">andrei.buhosu@outlook.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+447706164967" class="contact-link">+44 7706 164967</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>United Kingdom</address>
-            </div>
-
-          </li>
-
-
-          
-          
-
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list" data-nav>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#certs" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-
-
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certifications</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
       </nav>
 
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle type="button" aria-label="Toggle colour theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
 
+        <a class="btn btn--ghost btn--sm resume-btn" href="./assets/Andrei_Buhosu_CV.pdf" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+          </svg>
+          <span>Résumé</span>
+        </a>
 
+        <button class="menu-toggle" data-menu-toggle type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
+  <main id="main">
 
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a highly motivated software engineer with expertise in <strong>Salesforce development</strong>, <strong>Apex programming</strong>, and <strong>web development</strong>. I have a strong background in <strong>computer science</strong> with experience working on scalable applications and automated processes in Salesforce environments.
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">
+            <span class="status-dot"></span> Available for new opportunities
           </p>
-          <p>
-            I am currently working on a web application using <strong>Spring Boot</strong> for the backend and <strong>Angular</strong> for the frontend, further honing my skills in <strong>full-stack development</strong>.
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Andrei Buhosu</span>
+          </h1>
+          <p class="hero-role">
+            <span class="role-static">I build</span>
+            <span class="role-rotate" data-typed
+              data-words="Salesforce solutions.;full-stack web apps.;clean, scalable code.;AI-driven tools."></span>
+            <span class="caret" aria-hidden="true"></span>
           </p>
-          <p>
-            Currently pursuing an <strong>MSc in Computer Science with Artificial Intelligence</strong> at the <strong>University of York</strong>, I am committed to developing innovative solutions and continuously expanding my technical knowledge.
+          <p class="hero-lead">
+            A UK-based <strong>Software Engineer</strong> and certified <strong>Salesforce Developer</strong> crafting
+            automated, scalable business solutions with Apex, Lightning Web Components and full-stack
+            Java&nbsp;/&nbsp;Spring&nbsp;Boot&nbsp;&amp;&nbsp;Angular — currently reading for an
+            <strong>MSc in Computer Science with AI</strong> at the University of York.
           </p>
-        </section>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-          <ul class="service-list">
-  
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/salesforce.png" alt="Salesforce Development" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 timeline-item-title">Salesforce Development</h4>
-                <p class="service-item-text">Expertise in building custom solutions on Salesforce using Apex, SOQL, and Lightning Web Components to automate business processes.</p>
-              </div>
-            </li>
-          
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/programming.png" alt="Full-Stack Development" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 timeline-item-title">Full-Stack Web Development</h4>
-                <p class="service-item-text">Currently working on a web application using Spring Boot for backend development and Angular for frontend, with a focus on scalable and efficient applications.</p>
-              </div>
-            </li>
-          
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/flight.png" alt="Traveling and Exploring" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 timeline-item-title">Traveling & Exploring the World</h4>
-                <p class="service-item-text">I love traveling and exploring new cultures. Traveling helps me understand different perspectives and enriches my personal and professional growth.</p>
-              </div>
-            </li>
-          
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/self-improvement.png" alt="Self-Improvement" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 timeline-item-title">Self-Improvement</h4>
-                <p class="service-item-text">Focusing on improving myself through reading, weightlifting, boxing, and learning Spanish. These activities help me stay disciplined and continuously learn.</p>
-              </div>
-            </li>
-          
-          </ul>
-          
-
-        </section>
-
-
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-
-
-          </section>
-
-        </div>
-
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#work">
+              View my work
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
           </div>
 
-          <ul class="timeline-list">
-  
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of York, MSc Computer Science with Artificial Intelligence</h4>
-              <span>2024 — 2026</span>
-              <p class="timeline-text">
-                Pursuing an MSc degree with a focus on Artificial Intelligence, machine learning, and advanced computer science topics. Engaged in both research and practical applications, working on AI-driven projects and exploring new developments in AI and machine learning.
-              </p>
+          <ul class="hero-socials" aria-label="Social links">
+            <li>
+              <a href="https://www.linkedin.com/in/abuhosu" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
             </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Leicester, BSc Computer Science (2:1)</h4>
-              <span>2020 — 2023</span>
-              <p class="timeline-text">
-                Achieved a Second-Class Honours (Upper Division). Specialized in software development, data structures, and algorithms. Completed various projects including a medical diagnostic web application ("Victa") and a parking system ("E-Parking Solution"). Key modules included Software Engineering, Databases, and Artificial Intelligence.
-              </p>
+            <li>
+              <a href="https://github.com/andreibuhosu" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+              </a>
             </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Birmingham City University, Foundation Year in Computer Science</h4>
-              <span>2019 — 2020</span>
-              <p class="timeline-text">
-                Completed foundational coursework in programming, mathematics, and introductory software development. Developed a strong understanding of the core principles in computer science that laid the groundwork for my BSc studies.
-              </p>
+            <li>
+              <a href="https://trailblazer.me/id/andreibuhosu" target="_blank" rel="noopener" aria-label="Salesforce Trailblazer">
+                <img src="./assets/images/Salesforce-logo.png" alt="" width="22" height="22" />
+              </a>
             </li>
-          
+            <li>
+              <a href="mailto:andrei.buhosu@outlook.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </a>
+            </li>
           </ul>
-          
+        </div>
 
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+        <div class="hero-visual" data-reveal>
+          <div class="avatar-ring">
+            <div class="avatar-glow"></div>
+            <img class="avatar-img" src="./assets/images/my-avatar.png" alt="Andrei Buhosu" width="220" height="220" />
+            <span class="float-chip chip-sf" style="--i:0">
+              <img src="./assets/images/Salesforce-logo.png" alt="" width="18" height="18" /> Salesforce
+            </span>
+            <span class="float-chip chip-java" style="--i:1">Java</span>
+            <span class="float-chip chip-ng" style="--i:2">Angular</span>
+            <span class="float-chip chip-ai" style="--i:3">AI / ML</span>
           </div>
-
-          <ul class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Performa IT, Salesforce Developer</h4>
-              <span>October 2023 — Present</span>
-              <p class="timeline-text">
-                Working as a Salesforce Developer, building custom solutions using Apex, SOQL, and Lightning Web Components (LWC). Focused on backend logic automation and improving user interface interactivity. Responsible for deployment using Gearset, ensuring smooth transitions between environments. Achieved high client satisfaction by solving customer cases efficiently and maintaining 90% code coverage for Apex unit testing.
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Leicester, Teacher Assistant</h4>
-              <span>October 2022 — January 2023</span>
-              <p class="timeline-text">
-                Assisted in teaching the Software Architecture and System Development module. Worked closely with 2nd-year students in practical lab sessions, guiding them through software design principles, development patterns, and problem-solving strategies.
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">University of Leicester, Software Developer</h4>
-              <span>February 2022 — May 2022</span>
-              <p class="timeline-text">
-                Developed "Victa", a medical diagnostic web application aimed at enhancing medical students' skills in diagnosis. Used Java, JavaScript, MySQL, and the Spring Boot framework. Participated in Scrum-based development cycles, communicating with the client and implementing iterative improvements to the system.
-              </p>
-            </li>
-          
-          </ul>
-          
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
- 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Salesforce Development (Apex, SOQL, LWC)</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-              <p class="skill-description">Extensive experience building custom Salesforce solutions using Apex, SOQL, and Lightning Web Components. Focus on backend automation and UI development.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-              <p class="skill-description">Proficient in Java, with experience developing web applications using frameworks like Spring Boot, focusing on back-end development and microservices architecture.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">JavaScript & Front-End Development (Angular)</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-              <p class="skill-description">Experienced in front-end technologies, including Angular, building dynamic user interfaces with a focus on performance and user experience.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">SQL & Databases (MySQL, PostgreSQL)</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-              <p class="skill-description">Strong knowledge of relational databases, experienced in writing complex SQL queries and optimizing database performance for large-scale applications.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">AWS & Cloud Computing</h5>
-                <data value="50">50%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-              <p class="skill-description">Some experience in AWS services such as EC2, S3, and Lambda, with experience in deploying, managing, and scaling cloud-based applications.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Version Control & CI/CD (Git, Gearset)</h5>
-                <data value="90">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-              <p class="skill-description">Experienced with Git for version control and CI/CD tools like Gearset, ensuring efficient, automated deployment workflows.</p>
-            </li>
-          
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Problem Solving & Algorithms</h5>
-                <data value="85">85%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-              <p class="skill-description">Strong problem-solving skills, with a deep understanding of algorithms and data structures. Proficient in applying these to optimize code performance.</p>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/andreibuhosu/E-ParkingSolution">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/e-parkingsolution.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">E-Parking Solution</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/andreibuhosu/VictaProject">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Victa.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Victa Project</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/andreibuhosu/EnergyTool">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Energy Tool.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Energy Tool</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/andreibuhosu/AngularSpringBootFullStack">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/emanagement.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">eManagement - Full-Stack</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/andreibuhosu/OrderTracker">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/order-tracker.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Order Tracker</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #certifications
-      -->
-
-      <article class="certifications" data-page="certifications">
-
-        <header>
-          <h2 class="h2 article-title">Certifications</h2>
-        </header>
-
-        <section class="certifications-posts">
-
-          <ul class="certifications-posts-list">
-
-            <li class="certifications-post-item">
-              <a href="./assets/images/javascript-developer.pdf">
-          
-                <figure class="certifications-banner-box">
-                  <img src="./assets/images/js-logo-cert.png" alt="Salesforce JavaScript Developer I" loading="lazy">
-                </figure>
-          
-                <div class="certifications-content">
-          
-                  <div class="certifications-meta">
-                    <p class="certifications-category">Salesforce Certification</p>
-                    <span class="dot"></span>
-                    <time datetime="2023-08-15">2024</time>
-                  </div>
-          
-                  <h3 class="h3 certifications-item-title">Salesforce JavaScript Developer I</h3>
-          
-                  <p class="certifications-text">
-                    Certified Salesforce JavaScript Developer I, demonstrating proficiency in JavaScript programming and Lightning Web Components for building responsive, interactive web applications on the Salesforce platform.
-                  </p>
-          
-                </div>
-          
-              </a>
-            </li>
-
-            <li class="certifications-post-item">
-              <a href="./assets/images/ai-associate.pdf">
-          
-                <figure class="certifications-banner-box">
-                  <img src="./assets/images/ai-associate-cert.png" alt="Salesforce AI Associate" loading="lazy">
-                </figure>
-          
-                <div class="certifications-content">
-                  <div class="certifications-meta">
-                    <p class="certifications-category">Salesforce Certification</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-01-05">2024</time>
-                  </div>
-          
-                  <h3 class="h3 certifications-item-title">Salesforce AI Associate</h3>
-          
-                  <p class="certifications-text">
-                    Acknowledges foundational knowledge in artificial intelligence and machine learning concepts within the Salesforce platform.
-                  </p>
-                </div>
-          
-              </a>
-            </li>
-
-            <li class="certifications-post-item">
-              <a href="./assets/images/ai-associate.pdf">
-          
-                <figure class="certifications-banner-box">
-                  <img src="./assets/images/ai-specialist-cert.png" alt="Salesforce AI Specialist" loading="lazy">
-                </figure>
-          
-                <div class="certifications-content">
-                  <div class="certifications-meta">
-                    <p class="certifications-category">Salesforce Certification</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-05-22">2024</time>
-                  </div>
-          
-                  <h3 class="h3 certifications-item-title">Salesforce AI Specialist</h3>
-          
-                  <p class="certifications-text">
-                    Demonstrated advanced knowledge in artificial intelligence, machine learning, and their application in Salesforce environments.
-                  </p>
-                </div>
-          
-              </a>
-            </li>
-
-            
-  <li class="certifications-post-item">
-    <a href="./assets/images/greensustainability.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Green & Sustainability Terminology" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
         </div>
-
-        <h3 class="h3 certifications-item-title">Green & Sustainability Terminology</h3>
-
-        <p class="certifications-text">
-          Completed this course on understanding key sustainability terms and concepts in modern business practices.
-        </p>
       </div>
 
-    </a>
-  </li>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
 
-  <li class="certifications-post-item">
-    <a href="./assets/images/whistleblowing.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Whistleblowing" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Whistleblowing</h3>
-
-        <p class="certifications-text">
-          Learned about whistleblowing policies, legal protections, and best practices for reporting misconduct.
-        </p>
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Apex</span><span>Lightning Web Components</span><span>SOQL</span><span>Java</span><span>Spring Boot</span>
+        <span>Angular</span><span>TypeScript</span><span>Python</span><span>Kotlin</span><span>AWS</span>
+        <span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>MySQL</span><span>Git</span><span>Gearset</span>
+        <!-- duplicate for seamless loop -->
+        <span>Apex</span><span>Lightning Web Components</span><span>SOQL</span><span>Java</span><span>Spring Boot</span>
+        <span>Angular</span><span>TypeScript</span><span>Python</span><span>Kotlin</span><span>AWS</span>
+        <span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>MySQL</span><span>Git</span><span>Gearset</span>
       </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/equality.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Equality, Diversity & Inclusion Awareness" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Equality, Diversity & Inclusion Awareness</h3>
-
-        <p class="certifications-text">
-          Gained an understanding of the importance of diversity and inclusion in the workplace, and how to promote these values.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/cybersecurity.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Cyber Security Best Practices" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Cyber Security Best Practices</h3>
-
-        <p class="certifications-text">
-          Completed a course on best practices for maintaining security and protecting sensitive information in a digital environment.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/antibribery.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Anti-Bribery & Corruption" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Anti-Bribery & Corruption</h3>
-
-        <p class="certifications-text">
-          Learned about anti-bribery and anti-corruption laws and how to promote ethical practices in the workplace.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/anti-money-laundering.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Anti-Money Laundering" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Anti-Money Laundering</h3>
-
-        <p class="certifications-text">
-          Studied methods to identify and prevent money laundering activities within organizations.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/gdpr.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Understanding GDPR" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Understanding GDPR</h3>
-
-        <p class="certifications-text">
-          Completed training on the General Data Protection Regulation (GDPR) and its implications for data handling and privacy.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-  <li class="certifications-post-item">
-    <a href="./assets/images/mentalhealth.pdf">
-
-      <figure class="certifications-banner-box">
-        <img src="./assets/images/bright-hr.png" alt="Mental Health Awareness" loading="lazy">
-      </figure>
-
-      <div class="certifications-content">
-        <div class="certifications-meta">
-          <p class="certifications-category">Bright HR Course</p>
-          <span class="dot"></span>
-          <time datetime="2024-01-01">2024</time>
-        </div>
-
-        <h3 class="h3 certifications-item-title">Mental Health Awareness</h3>
-
-        <p class="certifications-text">
-          Gained insights into promoting mental health awareness and supporting colleagues in the workplace.
-        </p>
-      </div>
-
-    </a>
-  </li>
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9581646.7589932!2d-14.98949355837764!3d54.104430893370875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sRegatul%20Unit!5e0!3m2!1sro!2suk!4v1728844357628!5m2!1sro!2suk"
-              width="400" height="300" loading="lazy">
-            </iframe>
-          </figure>
-        </section>
-        
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
     </div>
 
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">01 — About</p>
+          <h2 class="section-title">Engineering solutions that <span class="gradient-text">scale</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a highly motivated software engineer with deep expertise in <strong>Salesforce development</strong>,
+              <strong>Apex programming</strong> and modern <strong>web development</strong>. I love turning messy,
+              manual business processes into clean, automated systems that just work — and hold up under real-world load.
+            </p>
+            <p>
+              Day to day I build custom Salesforce solutions with Apex, SOQL and Lightning Web Components, ship them
+              safely through <strong>Gearset CI/CD</strong>, and keep Apex test coverage above 90%. Outside the platform
+              I'm a full-stack engineer, building applications with <strong>Spring Boot</strong> on the back end and
+              <strong>Angular</strong> on the front.
+            </p>
+            <p>
+              I'm currently pursuing an <strong>MSc in Computer Science with Artificial Intelligence</strong> at the
+              <strong>University of York</strong>, where I'm exploring machine learning and AI-driven engineering —
+              and constantly looking for the next problem worth solving.
+            </p>
+
+            <ul class="about-meta">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                United Kingdom
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Open to work
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                MSc CS &amp; AI — University of York
+              </li>
+            </ul>
+          </div>
+
+          <ul class="stats" data-reveal>
+            <li class="stat">
+              <span class="stat-num" data-count="3" data-suffix="+">0</span>
+              <span class="stat-label">Years building software</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num" data-count="3">0</span>
+              <span class="stat-label">Salesforce certifications</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num" data-count="10" data-suffix="+">0</span>
+              <span class="stat-label">Projects shipped</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num" data-count="90" data-suffix="%">0</span>
+              <span class="stat-label">Apex test coverage</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- what I do -->
+        <div class="cards" data-reveal>
+          <article class="card svc-card">
+            <div class="svc-icon"><img src="./assets/images/salesforce.png" alt="" width="30" /></div>
+            <h3>Salesforce Development</h3>
+            <p>Custom Apex, SOQL, triggers, Flows and Lightning Web Components that automate business processes and keep orgs maintainable.</p>
+          </article>
+          <article class="card svc-card">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Full-Stack Web</h3>
+            <p>End-to-end apps with Spring Boot REST APIs and Angular front ends — responsive, performant and built to scale.</p>
+          </article>
+          <article class="card svc-card">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6v6H9zM9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>Applying MSc-level AI and ML — from data-driven features to intelligent automation that augments real workflows.</p>
+          </article>
+          <article class="card svc-card">
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Deploying and scaling on AWS with Docker, Kubernetes and CI/CD pipelines (Gearset, Git) for smooth, reliable releases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE & EDUCATION ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">02 — Journey</p>
+          <h2 class="section-title">Experience &amp; <span class="gradient-text">education</span></h2>
+        </header>
+
+        <div class="timeline-grid">
+          <!-- experience -->
+          <div class="timeline-col" data-reveal>
+            <h3 class="timeline-heading">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Experience
+            </h3>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <div class="ti-top">
+                  <span class="ti-period">Oct 2023 — Present</span>
+                  <span class="badge badge--live">Current</span>
+                </div>
+                <h4>Salesforce Developer</h4>
+                <p class="ti-org">Performa IT</p>
+                <p class="ti-text">Build custom solutions with Apex, SOQL and Lightning Web Components, automating backend
+                  logic and enriching the UI. Own deployments through Gearset across environments, maintain 90%+ Apex unit-test
+                  coverage and resolve customer cases with consistently high client satisfaction.</p>
+              </li>
+              <li class="timeline-item">
+                <div class="ti-top"><span class="ti-period">Oct 2022 — Jan 2023</span></div>
+                <h4>Teaching Assistant</h4>
+                <p class="ti-org">University of Leicester</p>
+                <p class="ti-text">Supported the Software Architecture &amp; System Development module, guiding second-year
+                  students through design principles, development patterns and problem-solving in practical lab sessions.</p>
+              </li>
+              <li class="timeline-item">
+                <div class="ti-top"><span class="ti-period">Feb 2022 — May 2022</span></div>
+                <h4>Software Developer</h4>
+                <p class="ti-org">University of Leicester</p>
+                <p class="ti-text">Built "Victa", a medical diagnostic web app for training medical students, using Java,
+                  JavaScript, MySQL and Spring Boot. Worked in Scrum cycles, liaising with the client to ship iterative
+                  improvements.</p>
+              </li>
+            </ol>
+          </div>
+
+          <!-- education -->
+          <div class="timeline-col" data-reveal>
+            <h3 class="timeline-heading">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>
+              Education
+            </h3>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <div class="ti-top"><span class="ti-period">2024 — 2026</span></div>
+                <h4>MSc Computer Science with Artificial Intelligence</h4>
+                <p class="ti-org">University of York</p>
+                <p class="ti-text">Focused on artificial intelligence, machine learning and advanced computer science —
+                  combining research with hands-on, AI-driven projects.</p>
+              </li>
+              <li class="timeline-item">
+                <div class="ti-top">
+                  <span class="ti-period">2020 — 2023</span>
+                  <span class="badge">2:1 Honours</span>
+                </div>
+                <h4>BSc Computer Science</h4>
+                <p class="ti-org">University of Leicester</p>
+                <p class="ti-text">Upper Second-Class Honours. Specialised in software development, data structures and
+                  algorithms; key modules in Software Engineering, Databases and Artificial Intelligence.</p>
+              </li>
+              <li class="timeline-item">
+                <div class="ti-top"><span class="ti-period">2019 — 2020</span></div>
+                <h4>Foundation Year — Computer Science</h4>
+                <p class="ti-org">Birmingham City University</p>
+                <p class="ti-text">Foundations in programming, mathematics and software development that set up my BSc.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">03 — Toolkit</p>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">technologies</span></h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <img src="./assets/images/Salesforce-logo.png" alt="" width="22" height="22" /> Salesforce
+            </h3>
+            <ul class="tags">
+              <li>Apex</li><li>SOQL / SOSL</li><li>Lightning Web Components</li><li>Flows</li>
+              <li>Triggers</li><li>REST / SOAP Integrations</li><li>Gearset CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+              Languages
+            </h3>
+            <ul class="tags">
+              <li>Java</li><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>Kotlin</li><li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              Frameworks
+            </h3>
+            <ul class="tags">
+              <li>Spring Boot</li><li>Angular</li><li>Node.js</li><li>Bootstrap</li><li>JUnit</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+              Data
+            </h3>
+            <ul class="tags">
+              <li>MySQL</li><li>PostgreSQL</li><li>REST APIs</li><li>Data Modelling</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Cloud &amp; DevOps
+            </h3>
+            <ul class="tags">
+              <li>AWS (EC2, S3, Lambda)</li><li>Docker</li><li>Kubernetes</li><li>Linux</li><li>Git</li><li>CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card" data-reveal>
+            <h3 class="skill-cat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg>
+              Practices
+            </h3>
+            <ul class="tags">
+              <li>Agile / Scrum</li><li>Test-Driven Development</li><li>Algorithms &amp; DS</li><li>Problem Solving</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK / PORTFOLIO ===== -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">04 — Portfolio</p>
+          <h2 class="section-title">Selected <span class="gradient-text">projects</span></h2>
+        </header>
+
+        <div class="filters" data-reveal>
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="fullstack">Full-Stack</button>
+          <button class="filter" data-filter="mobile">Mobile</button>
+          <button class="filter" data-filter="api">Backend / API</button>
+        </div>
+
+        <ul class="project-grid" data-projects>
+          <!-- eCommerce -->
+          <li class="project" data-category="fullstack" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/Fullstack-eCommerce-Angular-SpringBoot" target="_blank" rel="noopener">
+              <div class="project-media project-media--gen grad-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="project-tag-float">Featured</span>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Full-Stack eCommerce</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>A complete shopping platform with product catalogue, cart, checkout and Stripe credit-card payments.</p>
+                <ul class="chips"><li>Angular</li><li>Spring Boot</li><li>Stripe</li><li>TypeScript</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- E-Parking -->
+          <li class="project" data-category="fullstack" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/E-ParkingSolution" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img src="./assets/images/e-parkingsolution.png" alt="E-Parking Solution screenshot" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>E-Parking Solution</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>Reserve, pay for and allocate an up-to-date free parking slot on the move — booking made effortless.</p>
+                <ul class="chips"><li>Java</li><li>Spring Boot</li><li>MySQL</li><li>HTML</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- Victa -->
+          <li class="project" data-category="fullstack" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/VictaProject" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img src="./assets/images/Victa.png" alt="Victa medical project screenshot" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Victa</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>A medical education platform that helps medical students sharpen their diagnostic skills through realistic cases.</p>
+                <ul class="chips"><li>Java</li><li>Spring Boot</li><li>JavaScript</li><li>MySQL</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- Energy Tool -->
+          <li class="project" data-category="fullstack" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/EnergyTool" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img src="./assets/images/Energy%20Tool.png" alt="iGSE Energy Tool screenshot" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>iGSE Energy Tool</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>Lets residents submit meter readings, view bills and process payments for an energy supplier.</p>
+                <ul class="chips"><li>Java</li><li>Spring Boot</li><li>Bootstrap</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- eManagement -->
+          <li class="project" data-category="fullstack" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/AngularSpringBootFullStack" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img src="./assets/images/emanagement.png" alt="eManagement app screenshot" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>eManagement</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>Full-stack employee-management system with complete CRUD operations and a clean, reactive UI.</p>
+                <ul class="chips"><li>Angular</li><li>TypeScript</li><li>Spring Boot</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- Order Tracker -->
+          <li class="project" data-category="mobile" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/OrderTracker" target="_blank" rel="noopener">
+              <div class="project-media">
+                <img src="./assets/images/order-tracker.png" alt="Order Tracker app screenshot" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Order Tracker</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>A mobile solution for waitstaff to capture and manage customer orders quickly and accurately.</p>
+                <ul class="chips"><li>Kotlin</li><li>Android</li></ul>
+              </div>
+            </a>
+          </li>
+
+          <!-- RESTful API -->
+          <li class="project" data-category="api" data-reveal>
+            <a class="project-link" href="https://github.com/andreibuhosu/RESTfulAPI" target="_blank" rel="noopener">
+              <div class="project-media project-media--gen grad-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </div>
+              <div class="project-body">
+                <div class="project-top">
+                  <h3>Bookstore REST API</h3>
+                  <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                </div>
+                <p>A clean RESTful API for a bookstore with full CRUD endpoints — a focused study in solid backend design.</p>
+                <ul class="chips"><li>Java</li><li>Spring Boot</li><li>REST</li></ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <p class="work-more" data-reveal>
+          <a class="btn btn--ghost" href="https://github.com/andreibuhosu" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+            See more on GitHub
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section class="section" id="certs">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-kicker">05 — Credentials</p>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">learning</span></h2>
+        </header>
+
+        <ul class="cert-grid">
+          <li class="card cert-card" data-reveal>
+            <a href="./assets/images/javascript-developer.pdf" target="_blank" rel="noopener">
+              <div class="cert-logo"><img src="./assets/images/js-logo-cert.png" alt="Salesforce JavaScript Developer I" loading="lazy" /></div>
+              <div class="cert-info">
+                <span class="cert-meta">Salesforce · 2024</span>
+                <h3>JavaScript Developer I</h3>
+                <p>Proficiency in JavaScript and Lightning Web Components for responsive apps on the Salesforce platform.</p>
+              </div>
+            </a>
+          </li>
+          <li class="card cert-card" data-reveal>
+            <a href="./assets/images/ai-associate.pdf" target="_blank" rel="noopener">
+              <div class="cert-logo"><img src="./assets/images/ai-associate-cert.png" alt="Salesforce AI Associate" loading="lazy" /></div>
+              <div class="cert-info">
+                <span class="cert-meta">Salesforce · 2024</span>
+                <h3>AI Associate</h3>
+                <p>Foundational knowledge of AI and machine-learning concepts within the Salesforce ecosystem.</p>
+              </div>
+            </a>
+          </li>
+          <li class="card cert-card" data-reveal>
+            <a href="https://trailblazer.me/id/andreibuhosu" target="_blank" rel="noopener">
+              <div class="cert-logo"><img src="./assets/images/ai-specialist-cert.png" alt="Salesforce AI Specialist" loading="lazy" /></div>
+              <div class="cert-info">
+                <span class="cert-meta">Salesforce · 2024</span>
+                <h3>AI Specialist</h3>
+                <p>Advanced application of AI and machine learning to build intelligent Salesforce solutions.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="cpd" data-reveal>
+          <h3 class="cpd-title">Continued professional development</h3>
+          <ul class="tags tags--muted">
+            <li>Cyber Security Best Practices</li>
+            <li>Understanding GDPR</li>
+            <li>Anti-Bribery &amp; Corruption</li>
+            <li>Anti-Money Laundering</li>
+            <li>Equality, Diversity &amp; Inclusion</li>
+            <li>Whistleblowing</li>
+            <li>Mental Health Awareness</li>
+            <li>Green &amp; Sustainability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head section-head--center" data-reveal>
+          <p class="section-kicker">06 — Contact</p>
+          <h2 class="section-title">Let's build something <span class="gradient-text">great</span></h2>
+          <p class="section-sub">Have a role, a project or just an idea? My inbox is always open — I'll get back to you.</p>
+        </header>
+
+        <div class="contact-grid">
+          <ul class="contact-cards" data-reveal>
+            <li class="card contact-card">
+              <a href="mailto:andrei.buhosu@outlook.com">
+                <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+                <span class="cc-text"><strong>Email</strong>andrei.buhosu@outlook.com</span>
+              </a>
+            </li>
+            <li class="card contact-card">
+              <a href="tel:+447706164967">
+                <span class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="cc-text"><strong>Phone</strong>+44 7706 164967</span>
+              </a>
+            </li>
+            <li class="card contact-card">
+              <a href="https://www.linkedin.com/in/abuhosu" target="_blank" rel="noopener">
+                <span class="cc-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+                <span class="cc-text"><strong>LinkedIn</strong>in/abuhosu</span>
+              </a>
+            </li>
+            <li class="card contact-card">
+              <a href="https://github.com/andreibuhosu" target="_blank" rel="noopener">
+                <span class="cc-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg></span>
+                <span class="cc-text"><strong>GitHub</strong>andreibuhosu</span>
+              </a>
+            </li>
+          </ul>
+
+          <form class="card contact-form" data-form action="https://formspree.io/f/your-id" method="POST" data-reveal>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">
+              <span>Send message</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note" data-form-note role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">AB</span>
+        <span class="brand-text">Andrei Buhosu</span>
+      </a>
+      <p class="footer-copy">© <span data-year>2026</span> Andrei Buhosu. Designed &amp; built with care.</p>
+      <ul class="footer-socials">
+        <li><a href="https://www.linkedin.com/in/abuhosu" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+        <li><a href="https://github.com/andreibuhosu" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg></a></li>
+        <li><a href="https://trailblazer.me/id/andreibuhosu" target="_blank" rel="noopener" aria-label="Trailblazer"><img src="./assets/images/Salesforce-logo.png" alt="" width="20" height="20" /></a></li>
+      </ul>
+    </div>
+  </footer>
 
+  <a href="#home" class="to-top" data-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </a>
 
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
